@@ -1,0 +1,37 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;600;700;800&display=swap');
+/* @font-face {
+    font-family: "Lato";
+    src: url("../fonts/Lato-Regular.ttf");
+} */
+
+/* TODO: Can I access WordPress's menu items while staying within TailWind? */
+.header-nav li {
+    display: inline-block;
+}
+
+/* .header-nav li a {
+    padding-right: 4em;
+} */
+
+.header-nav .menu-item-has-children a::after {
+    content: url("data:image/svg+xml,%3Csvg width='10' height='7' viewBox='0 0 10 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.22011 1.25733L4.32725 6.42019C4.71686 6.89251 5.31751 6.89251 5.69089 6.42019L9.79803 1.25733C10.1876 0.768727 9.99284 0.394135 9.39219 0.394135H0.625954C0.00907132 0.394135 -0.1695 0.768727 0.22011 1.25733Z' fill='white'/%3E%3C/svg%3E%0A");
+    padding-left: 0.4em;
+}
+
+.header-nav li.menu-item-has-children {
+    border: 0px solid #999;
+}
+
+.header-nav .sub-menu {
+    position: absolute;
+    background-color: #fff;
+    color: #000;
+}
+
+.header-nav .sub-menu li {
+    display: block;
+}
