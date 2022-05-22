@@ -2,13 +2,14 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+/* TODO: Find the proper way to load sage assets into tailwind */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;600;700;800&display=swap');
 /* @font-face {
     font-family: "Lato";
     src: url("../fonts/Lato-Regular.ttf");
 } */
 
-/* TODO: Can I access WordPress's menu items while staying within TailWind? */
+/* TODO: Find a way to apply tailwind classes to wordpress's menu items */
 .header-nav li {
     display: inline-block;
 }

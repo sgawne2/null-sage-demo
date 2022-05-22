@@ -10,13 +10,18 @@ const main = async (err) => {
   }
 
   // application code
-  (function() { // remove the box shadow from the header when it's at the top of the page
-    document.querySelector('#top-nav').classList.remove('shadow-lg');
+
+  /**
+   * remove the box shadow from the header when it's at the top of the page
+   */
+  (function() { 
+    let el = document.querySelector('#top-nav');
+    el.classList.remove('shadow-lg');
     window.onscroll = function() {
       if (window.scrollY > 0) {
-        document.querySelector('#top-nav').classList.add('shadow-lg');
+        el.classList.add('shadow-lg');
       } else {
-        document.querySelector('#top-nav').classList.remove('shadow-lg');
+        el.classList.remove('shadow-lg');
       }
     }
   })();

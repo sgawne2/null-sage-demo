@@ -2,6 +2,7 @@
 
 @section('content')
   @include('sections.landing-page.headline')
+  @include('sections.landing-page.statistics')
   {{-- @include('partials.page-header') --}}
 
   {{-- @if (! have_posts())

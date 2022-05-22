@@ -17,4 +17,5 @@
   @endif
 
   @include('sections.footer')
+  
 </div>

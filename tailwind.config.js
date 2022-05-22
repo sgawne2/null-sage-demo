@@ -2,9 +2,11 @@ module.exports = {
   content: ['./app/**/*.php', './resources/**/*.{php,vue,js}'],
   theme: {
     extend: {
+      // https://www.color-name.com/
       colors: {
         'violet-blue-1': '#875DFF',
         'violet-blue-2': '#794BFF',
+        'han-purple': '#6533FF',
         'navy-blue': '#0B036B',
         'deep-violet': '#1D0070',
         'white': '#FFFFFF',
