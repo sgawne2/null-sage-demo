@@ -2,11 +2,11 @@
     class="bg-no-repeat flex flex-row items-center bg-deep-violet text-white mt-24"
     style="background-image: url(@asset('images/benefits-bg-1.png')), url(@asset('images/benefits-bg-2.png')); background-position: left top, right bottom; background-size: 150px, 200px"
   >
-  <div class="w-7/12">
+  <div class="hidden lg:block lg:w-7/12">
     <img class="-mt-8 -mb-16 mx-auto" src="@asset('images/benefits-1.png')" alt="">
   </div>
-  <div class="w-5/12 mr-20">
-    <h2 class="text-5xl font-black my-8">Benefits from our online learning</h2>
+  <div class="w-full my-20 sm:m-20 lg:w-5/12 lg:m-auto lg:mr-20">
+    <h2 class="text-4xl text-center sm:text-5xl sm:text-left font-black my-8">Benefits from our online learning</h2>
     @include('partials.landing-page.benefits-item', [
       'icon' => 'award',
       'label' => 'Online Degrees',

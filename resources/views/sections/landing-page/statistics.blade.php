@@ -1,4 +1,4 @@
-<div class="flex flex-row text-han-purple mb-28 mx-auto max-w-4xl justify-between">
+<div class="flex flex-row text-han-purple mb-28 mx-12 lg:mx-auto max-w-4xl justify-between">
   @include('partials.landing-page.statistics-item', [
     'icon' => 'time',
     'amount' => '60,000+',
