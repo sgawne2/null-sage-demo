@@ -47,6 +47,7 @@
 /* TODO: Find a way to apply tailwind classes to wordpress's menu items (maybe this is best practice already?) */
 .header-nav li {
     display: inline-block;
+    padding-bottom: 0.5em;
 }
 
 .header-nav .menu-item-has-children a::after {
@@ -66,7 +67,7 @@
     position: absolute;
     background-color: #fff;
     color: #000;
-    margin: 0.5em;
+    margin: 0.4em;
     margin-left: -1em;
     padding: 0.5em 1em;
     min-width: 215px;

@@ -5,7 +5,13 @@
 
   <div class="w-full lg:w-1/2 lg:max-w-md">
     <div class="pb-12">
-      <h1 class="font-bold text-4xl sm:text-6xl leading-tight mt-0 mb-2">A revolutionary way to educate.</h1>
+      <h1 class="font-bold text-4xl sm:text-6xl leading-tight mt-0 mb-2">
+        @if(class_exists('ACF') && get_field('headline_text'))
+          {{ the_field('headline_text') }}
+        @else
+          A revolutionary way to educate.
+        @endif
+      </h1>
       <p class="text-lg font-light">"Online education is electronically supported learning that relies on the Internet for teacher/student interaction and the distribution of class materials."</p>
     </div>
 

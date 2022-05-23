@@ -14,10 +14,25 @@
     </button>
 
     {{-- navigation --}}
-    @if (has_nav_menu('primary_navigation'))
-      <nav class="nav-primary hidden w-full md:block md:w-7/12" id="menu" aria-label="{{ wp_get_nav_menu_name('primary_navigation') }}">
-        {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav header-nav flex flex-row justify-between text-white list-none text-xl', 'echo' => false]) !!}
-      </nav>
-    @endif
+    <nav class="nav-primary hidden w-full md:block md:w-7/12" id="menu">
+      @if (has_nav_menu('primary_navigation'))
+          {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav header-nav flex flex-row justify-between text-white list-none text-xl', 'echo' => false]) !!}
+      @else
+        <div class="menu-menu-1-container">
+          <ul id="menu-menu-1" class="nav header-nav flex flex-row justify-between text-white list-none text-xl">
+            <li id="menu-item-15" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15"><a href="#">Courses</a></li>
+            <li id="menu-item-16" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-16"><a href="#">Platforms</a>
+              <ul class="sub-menu">
+                <li id="menu-item-19" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19"><a href="#">Platform 1</a></li>
+                <li id="menu-item-20" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-20"><a href="#">Platform 2</a></li>
+                <li id="menu-item-22" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-22"><a href="#">Platform 3</a></li>
+              </ul>
+            </li>
+            <li id="menu-item-17" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17"><a href="#">Resources</a></li>
+            <li id="menu-item-18" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18"><a href="#">About</a></li>
+          </ul>
+        </div>
+      @endif
+    </nav>
   </div>
 </header>
