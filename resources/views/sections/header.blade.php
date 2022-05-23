@@ -1,6 +1,6 @@
 <header 
     id="top-nav" 
-    class="px-2 py-8 sticky top-0 shadow-lg bg-no-repeat"
+    class="px-2 py-8 sticky z-50 top-0 shadow-lg bg-no-repeat font-lato"
     style="background-image: url(@asset('images/bg-top.png')); background-position: center top; background-size: 1600px;"
   >
   <div class="container max-w-screen-lg mx-auto flex flex-wrap justify-between items-center">

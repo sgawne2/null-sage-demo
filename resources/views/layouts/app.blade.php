@@ -6,7 +6,7 @@
 
   @include('sections.header')
   
-  <main id="main" class="main font-lato" style="height: 500vh">
+  <main id="main" class="main font-lato">
     @yield('content')
   </main>
 

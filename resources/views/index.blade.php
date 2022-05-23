@@ -6,6 +6,8 @@
   @include('sections.landing-page.courses')
   @include('sections.landing-page.benefits')
   @include('sections.landing-page.application')
+  @include('sections.landing-page.testimonials')
+  @include('sections.landing-page.cta')
   {{-- @include('partials.page-header') --}}
 
   {{-- @if (! have_posts())
