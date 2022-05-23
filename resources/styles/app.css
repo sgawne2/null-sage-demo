@@ -2,9 +2,10 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-/* TODO: Find the proper way to load sage's assets into tailwind */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;600;700;800&display=swap');
-/* @font-face {
+/* TODO: Check documentation again. Find out why this syntax wont import sage's font dir assets into app.css (Sage10 specific??) */
+/* 
+@font-face {
     font-family: "Lato";
     src: url("../fonts/Lato-Thin.ttf") format('truetype');
     font-weight: 100;
@@ -37,9 +38,13 @@
     src: url("../fonts/Lato-Black.ttf") format('truetype');
     font-weight: 900;
     font-style: normal;
-} */
+} 
+*/
 
-/* TODO: Find a way to apply tailwind classes to wordpress's menu items */
+/**
+ * Wordpress navigation items
+ */
+/* TODO: Find a way to apply tailwind classes to wordpress's menu items (maybe this is best practice already?) */
 .header-nav li {
     display: inline-block;
 }
@@ -65,4 +70,68 @@
 
 .header-nav .sub-menu li {
     display: block;
+}
+
+/**
+ * Testimonials component one-off classes
+ */
+.testimonial-item[data-position="0"] img {
+    border-color: #AD90FF;
+    width: 148px;
+    height: 148px;
+}
+.testimonial-item[data-position="1"] img {
+    border-color: #AD90FF;
+    width: 68px;
+    height: 68px;
+}
+.testimonial-item[data-position="2"] img {
+    border-color: #FFE790;
+    width: 114px;
+    height: 114px;
+}
+.testimonial-item[data-position="3"] img {
+    border-color: #FF90E0;
+    width: 152px;
+    height: 152px;
+}
+.testimonial-item[data-position="4"] img {
+    border-color: #FF9090;
+    width: 102px;
+    height: 102px;
+}
+.testimonial-item[data-position="5"] img {
+    border-color: #90BDFF;
+    width: 118px;
+    height: 118px;
+}
+.testimonial-item[data-position="6"] img {
+    border-color: #FF9790;
+    width: 68px;
+    height: 68px;
+}
+
+.testimonial-item[data-position="1"] {
+    top: 70px;
+    right: 20%;
+}
+.testimonial-item[data-position="2"] {
+    top: -100px;
+    left: 10%;
+}
+.testimonial-item[data-position="3"] {
+    bottom: 200px;
+    left: 2%;
+}
+.testimonial-item[data-position="4"] {
+    top: -100px;
+    right: 7%;
+}
+.testimonial-item[data-position="5"] {
+    bottom: 200px;
+    right: 5%;
+}
+.testimonial-item[data-position="6"] {
+    bottom: 80px;
+    left: 33%;
 }

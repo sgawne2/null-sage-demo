@@ -4,6 +4,7 @@ module.exports = {
     extend: {
       // https://www.color-name.com/
       colors: {
+        'pale-violet': '#AD90FF',
         'violet-blue-1': '#875DFF',
         'violet-blue-2': '#794BFF',
         'han-purple': '#6533FF',

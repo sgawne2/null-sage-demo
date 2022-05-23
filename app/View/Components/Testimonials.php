@@ -7,42 +7,56 @@ use Roots\Acorn\View\Component;
 class Testimonials extends Component
 {
     /**
-     * The alert type.
-     *
-     * @var string
-     */
-    public $type;
-
-    /**
-     * The alert message.
-     *
-     * @var string
-     */
-    public $message;
-
-    /**
-     * The alert types.
+     * Testimonial dummy data
      *
      * @var array
      */
-    public $types = [
-        'default' => 'text-indigo-50 bg-indigo-400',
-        'success' => 'text-green-50 bg-green-400',
-        'caution' => 'text-yellow-50 bg-yellow-400',
-        'warning' => 'text-red-50 bg-red-400',
+    public $items = [
+        [
+            'reviewer' => 'Jeo Stanlee',
+            'review_text' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor',
+            'image' => 'testimonials-0.jpg',
+        ],
+        [
+            'reviewer' => 'Jeo Stanlee',
+            'review_text' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor',
+            'image' => 'testimonials-1.jpg',
+        ],
+        [
+            'reviewer' => 'Jeo Stanlee',
+            'review_text' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor',
+            'image' => 'testimonials-2.jpg',
+        ],
+        [
+            'reviewer' => 'Jeo Stanlee',
+            'review_text' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor',
+            'image' => 'testimonials-3.jpg',
+        ],
+        [
+            'reviewer' => 'Jeo Stanlee',
+            'review_text' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor',
+            'image' => 'testimonials-4.jpg',
+        ],
+        [
+            'reviewer' => 'Jeo Stanlee',
+            'review_text' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor',
+            'image' => 'testimonials-5.jpg',
+        ],
+        [
+            'reviewer' => 'Jeo Stanlee',
+            'review_text' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor',
+            'image' => 'testimonials-6.jpg',
+        ],
     ];
 
     /**
      * Create the component instance.
      *
-     * @param  string  $type
-     * @param  string  $message
      * @return void
      */
-    public function __construct($type = 'default', $message = null)
+    public function __construct()
     {
-        $this->type = $this->types[$type] ?? $this->types['default'];
-        $this->message = $message;
+        shuffle($this->items);
     }
 
     /**
@@ -52,6 +66,6 @@ class Testimonials extends Component
      */
     public function render()
     {
-        return $this->view('components.alert');
+        return $this->view('components.testimonials');
     }
 }
