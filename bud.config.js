@@ -37,5 +37,5 @@ module.exports = async (app) => {
     /**
      * Development URL to be used in the browser.
      */
-    .serve('http://localhost:3000');
+    .serve('http://localhost:8080');
 };

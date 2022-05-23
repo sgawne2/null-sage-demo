@@ -3,6 +3,9 @@
 @section('content')
   @include('sections.landing-page.headline')
   @include('sections.landing-page.statistics')
+  @include('sections.landing-page.courses')
+  @include('sections.landing-page.benefits')
+  @include('sections.landing-page.application')
   {{-- @include('partials.page-header') --}}
 
   {{-- @if (! have_posts())
