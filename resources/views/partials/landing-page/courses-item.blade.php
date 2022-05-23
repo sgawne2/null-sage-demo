@@ -1,9 +1,9 @@
-<div class="mx-auto bg-white text-center rounded-2xl w-72 cursor-pointer flex flex-col justify-between">
+<div class="h-full mx-auto bg-white text-center rounded-2xl w-72 cursor-pointer flex flex-col justify-between">
   
   <div class="inline-block mx-auto">
     <div class="absolute m-2 py-0.5 px-4 bg-white text-sm font-normal text-black rounded-xl">{{ $category }}</div>
     <img src="@asset('images/' . $image)">
-  </div> 
+  </div>
 
   <div class="py-4 px-6">
     <p class="text-navy-blue text-2xl font-bold">{{ $label }}</p>
