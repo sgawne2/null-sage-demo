@@ -1,6 +1,6 @@
 <div class="flex flex-col">
   <div class="mx-auto inline-block text-center max-w-xl">
-    <h2 class="text-4xl sm:text-5xl text-navy-blue font-black">Student Testimonial</h2>
+    <h2 class="text-4xl my-11 sm:text-5xl text-navy-blue font-black">Student Testimonial</h2>
     <span>vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum dui faucibus in ornare quam viverra orci</span>
   </div>
 

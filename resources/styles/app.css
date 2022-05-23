@@ -66,6 +66,11 @@
     position: absolute;
     background-color: #fff;
     color: #000;
+    margin: 0.5em;
+    margin-left: -1em;
+    padding: 0.5em 1em;
+    min-width: 215px;
+    border-radius: 10px;
 }
 
 .header-nav .sub-menu li {

@@ -1,4 +1,4 @@
-<div class="flex flex-row items-center text-white items-center my-24 mx-5 sm:mx-20">
+<div class="flex flex-row items-center text-white items-center my-24 mx-6 sm:mx-20">
   <div class="hidden lg:block px-12 w-1/2">
     <img src="@asset('images/student-1.png')" alt="Student at computer">
   </div>

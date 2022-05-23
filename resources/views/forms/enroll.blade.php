@@ -1,5 +1,5 @@
 <div class="flex flex-col text-center">
-  <h2 class="text-2xl sm:text-5xl font-black text-navy-blue">Get Started Now!</h2>
+  <h2 class="text-2xl mb-11 sm:text-5xl font-black text-navy-blue">Get Started Now!</h2>
   <p class="text-md sm:text-lg font-normal text-black">vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum dui faucibus in ornare quam viverra orci</p>
 
   <input class="my-4 mx-auto sm:h-20 max-w-full sm:w-96 text-2xl border border-violet-blue-2 rounded-2xl text-center" type="text" placeholder="Full name">
